@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tryhut.geo_app.EmptyProjectActivity">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Lista projektów - to by było to samo, co lista projektów w project_options-->
+                <LinearLayout
+                    android:id="@+id/project_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <!--mapa dla projektu z opcją przesuwania, przybliżania (w sumie to wszystko, co daje api od googleMaps
+                Dodatkowo dodać na dole mapy pasek z kilkoma opcjami - wlączenie nawigacji do punktu (to samo okno, co szybka nawigacja
+                w main activity),
+                 -dodanie punktu przez wskazanie
+                 -wlączenie numeracji punktów
+                 -może zrzut ekranu
+                 - odszukanie punktu z możliwością wpisania współrzędnych
+                 -import txt/csv/dxf
+                 -eksport txt/csv/pdf (nie bawiłabym się w dxf'a)
+               -->
+
+
+                <RelativeLayout
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+                <!--
+                lista punktów dla projektu z widokiem współrzędnych i wysokości
+                -możliwość odznaczenia/zaznaczenia punktów
+                -możliwość importu z pliku txt/csv
+                -możliwość eksportu do txt/csv/pdf
+                -
+                -->
+                <LinearLayout
+                    android:id="@+id/points"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:text="@string/points">
+
+                </LinearLayout>
+
+                <!--lista dostępnych obliczeń
+                - azymut i długość-->
+                <!-- -kąt ze wspołrzędnych-->
+                <!-- -przecięcie prostych-->
+                <!-- - transformacja na układ-->
+                <!-- - wcięcie liniowe-->
+                <!-- -wcięcie kątowe-->
+                <!-- -wcięcie wstecz-->
+                <!-- - biegunówka/wytycznie-->
+                <!-- -ortogonalne
+                -pole powierzchni
+
+                Może możliwość dodania punktów bezpośrednio z mapy do obliczeń? Na pewno bezpośrednio z tabeli.
+                Albo wpisujesz nr i wskakuje Ci numer, jak w cgeo
+                -->
+                <LinearLayout
+                    android:id="@+id/calculations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:text="@string/calculations">
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

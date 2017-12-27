@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tryhut.geo_app.ProjectOptionsActivity">
+
+
+    <!--jako image view byłaby ikona aplikacji w dobrej rozdzielczości jako tło-->
+
+
+    <!--Przechodzi do empty_project_activity-->
+    <Button
+        android:id="@+id/empty_project_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/import_from_cgeo_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="@string/empty_project"
+        android:theme="@style/toggleButton" />
+
+    <!--Przechodzi do cgeo_project_activity , które rozszerza klasę empty_project_activity-->
+    <Button
+        android:id="@+id/import_from_cgeo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/project_list_button"
+        android:layout_alignStart="@+id/empty_project_button"
+        android:layout_marginBottom="98dp"
+        android:text="@string/import_from_cgeo"
+        android:theme="@style/toggleButton" />
+
+    <!--Przechodzi do listy projektów - tu może zdałoby się jakieś połączenie do chmury, żeby nie trzymać tego lokalnie
+    Może lokalnie tylko ostatni projekt?-->
+    <Button
+        android:id="@+id/project_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/import_from_cgeo_button"
+        android:layout_marginBottom="141dp"
+        android:text="@string/project_list"
+        android:theme="@style/toggleButton" />
+
+</RelativeLayout>
+
+
+

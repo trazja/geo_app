@@ -5,4 +5,15 @@
     <string name="quick_calculations">Szybkie obliczenia</string>
     <string name="settings">Ustawienia</string>
     <string name="help">Pomoc</string>
+
+    <string name="empty_project">Stwórz pusty projekt</string>
+    <string name="import_from_cgeo">Otwórz projekt C-GEO</string>
+    <string name="project_list">Lista projektów</string>
+
+    <string name="map">Mapa</string>
+    <string name="points">Punkty</string>
+    <string name="calculations">Obliczenia</string>
+
+
+
 </resources>

@@ -11,6 +11,7 @@
     <!--jako image view byłaby ikona aplikacji w dobrej rozdzielczości jako tło-->
 
 
+    <!--Przechodzi do okna obliczeń - wybierasz, które, wpisujesz współrzędne z palca lub z importu-->
     <Button
         android:id="@+id/quickCalculationsButton"
         android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
         android:theme="@style/toggleButton" />
 
 
+    <!--Od razu wchodzi w ekran nawigowania do punktu - współrzędne wpisujemy z palca-->
     <Button
         android:id="@+id/quickNavigateButton"
         android:layout_width="wrap_content"
@@ -42,6 +44,16 @@
         android:text="@string/quick_navigate"
         android:theme="@style/toggleButton" />
 
+    <!--W ustawieniach wybór:
+    - dokładności wyświetlania współrzędnych
+    - wybór układu współrzędnych
+    - wybór jednostek miar( ary, hektary, metry, km, stopnie itd)
+    - wybór języka aplikacji
+    - wybór linku do chmury, w której trzyma użytkownik projekty - dropbox, onedrive, chyba, że będzie własna
+    -
+
+    -->
+
     <Button
         android:id="@+id/settingsButton"
         android:layout_width="wrap_content"
@@ -51,6 +63,12 @@
         android:layout_marginTop="39dp"
         android:text="@string/settings"
         android:theme="@style/toggleButton" />
+
+    <!--W pomocy:
+    -O programie
+    - contact us
+    -send feedback
+    - quick help/faqs-->
 
     <Button
         android:id="@+id/helpButton"

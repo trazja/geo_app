@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ProjectOptionsActivity" />
+        <activity android:name=".EmptyProjectActivity"></activity>
     </application>
 
 </manifest>
