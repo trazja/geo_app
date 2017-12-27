@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tryhut.geo_app.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--jako image view byłaby ikona aplikacji w dobrej rozdzielczości jako tło-->
+
+
+    <Button
+        android:id="@+id/quickCalculationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quickNavigateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/quick_calculations"
+        android:theme="@style/toggleButton" />
+
+    <Button
+        android:id="@+id/projectsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/quickCalculationsButton"
+        android:layout_marginTop="46dp"
+        android:text="@string/project_button"
+        android:theme="@style/toggleButton" />
+
+
+    <Button
+        android:id="@+id/quickNavigateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/projectsButton"
+        android:layout_below="@+id/projectsButton"
+        android:layout_marginTop="46dp"
+        android:text="@string/quick_navigate"
+        android:theme="@style/toggleButton" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quickCalculationsButton"
+        android:layout_below="@+id/quickCalculationsButton"
+        android:layout_marginTop="39dp"
+        android:text="@string/settings"
+        android:theme="@style/toggleButton" />
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/settingsButton"
+        android:layout_marginBottom="43dp"
+        android:text="@string/help"
+        android:theme="@style/toggleButton" />
+</RelativeLayout>

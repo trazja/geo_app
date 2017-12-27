@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">geo_app</string>
+    <string name="project_button">Projekty</string>
+    <string name="quick_navigate">Szybka nawigacja</string>
+    <string name="quick_calculations">Szybkie obliczenia</string>
+    <string name="settings">Ustawienia</string>
+    <string name="help">Pomoc</string>
+</resources>
